@@ -6,7 +6,7 @@
     flex-direction: row;
     /* column | row-reverse | column-reverse */
     
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     /*wrap | wrap-reverse */
   
     justify-content: flex-start;
@@ -15,8 +15,8 @@
     align-items: stretch;
     /* flex-start | flex-end | center | baseline */
 
-    align-content: stretch;
-    /* flex-start | flex-end | center | space-between | space-around */
+    align-content: flex-start;
+/* flex-start | flex-end | center | space-between | space-around | stretch */
 }
 
 .item {
@@ -24,7 +24,16 @@
     color: #fff;
     padding: 20px;
     margin: 5px;
-    width: 200px;
-    height: 50px;
+    height: 30px;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
+
+    flex: 1 1 300px;
 }
 
+.article-01 { flex-shrink: 3;}
+.article-02 {}
+.article-03 {} 
+.article-04 {}
